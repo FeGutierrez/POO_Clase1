@@ -29,8 +29,9 @@ public class Main {
         acc2.cambiarPassword("EstaEsUnaClaveNueva ");
         
         System.out.println("Señor: "+ acc2.nombre + " su clave es: " + acc2.password );
-        //System.out.println("Señor: "+ acc2.nombre + " su saldo es:" + acc2.saldoCuenta ); 
+        //System.out.println("Señor: "+ acc2.nombre + " su saldo es:" + acc2.saldoCuenta );; 
         acc2.consolutarSaldo();
+        
         
         
         
