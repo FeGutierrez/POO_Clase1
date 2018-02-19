@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Date;
 
 /**
  *
@@ -14,12 +10,16 @@ public class Empleado {
     String nombre;
     String apellido;
     String genero;
-    String fechaDeNacimiento;
     String imagenAsociada;
-    String fechaDeIngreso;
+    Date fechaDeIngreso;
     
-    public Empleado(int id, String nombre, String apellido, String genero){
+    public Empleado(int id, String nombre, String apellido, String genero, String imagenAsociada, Date fechaDeIngreso){
         this.id=id;
+        this.nombre=nombre;
+        this.apellido=apellido;
+        this.genero=genero;
+        this.imagenAsociada=imagenAsociada;
+        this.fechaDeIngreso=fechaDeIngreso;
     };
     
     
