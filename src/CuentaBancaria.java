@@ -40,7 +40,7 @@ public class CuentaBancaria {
         };
         
         public void consolutarSaldo(){
-            System.out.println("Su saldo es:" + this.saldoCuenta);           
+            System.out.println("Señor(a): " + this.nombre + " su saldo es:" + this.saldoCuenta);           
             
         };
     

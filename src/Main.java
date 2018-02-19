@@ -15,16 +15,22 @@ public class Main {
     public static void main(String[] args) {
         
          //public CuentaBancaria(int idNumber, String password, String nombre, String apellido, double saldoCuenta ){
+        Persona per1= new Persona("Magdalena","Sanchez");
+        Persona per2= new Persona("Joselito","Perez");
+        CuentaBancaria acc1 = new CuentaBancaria(1012, "1234", per1.nombre, per1.apellido, 0);
+        CuentaBancaria acc2 = new CuentaBancaria(1013, "9876", per2.nombre , per2.apellido ,500000);
         
-        CuentaBancaria acc1 = new CuentaBancaria(1012, "1234", "Magdalena", "Sanchez",0);
-        CuentaBancaria acc2 = new CuentaBancaria(1013, "9876", "Joselito", "Perez",500000);
+        
         
         acc1.consignarMonto(100000);
         acc1.consolutarSaldo();
+        
         System.out.println("Clave antigua " + acc2.password);
-        acc2.cambiarPassword("EstaEsUnaClaveNueva");
-        System.out.println("Señor"+ acc2.nombre + " su clave es:" + acc2.password );
-        System.out.println("Señor"+ acc2.nombre + " su saldo es:" + acc2.saldoCuenta );
+        acc2.cambiarPassword("EstaEsUnaClaveNueva ");
+        
+        System.out.println("Señor: "+ acc2.nombre + " su clave es: " + acc2.password );
+        //System.out.println("Señor: "+ acc2.nombre + " su saldo es:" + acc2.saldoCuenta ); 
+        acc2.consolutarSaldo();
         
         
         
