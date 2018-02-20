@@ -9,22 +9,29 @@
  * @author Estudiante
  */
 public class CuentaBancaria {
-        int idNumber;
+    
+        //Atributos
+    
+        int idAccount;
+        int idUser;
         String password;
         String nombre;
         String apellido;
         double saldoCuenta;
         
+        
         //Constructor
         
-       public CuentaBancaria(int idNumber, String password, String nombre, String apellido, double saldoCuenta ){
-           this.idNumber=idNumber;
+       public CuentaBancaria(int idAccount, int idUser, String password, String nombre, String apellido, double saldoCuenta ){
+           this.idAccount=idAccount;
+           this.idUser=idUser;
            this.password=password;
            this.nombre=nombre;
            this.apellido=apellido;           
            this.saldoCuenta=saldoCuenta;
        };
         
+       
         //Métodos
         
         public double consignarMonto(double cash){
@@ -44,4 +51,4 @@ public class CuentaBancaria {
             
         };
     
-}
+};

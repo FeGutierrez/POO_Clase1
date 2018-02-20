@@ -1,3 +1,6 @@
+
+import java.util.Date;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,10 +13,12 @@
  */
 public class Persona {
     
+    int idUser;
     String nombre;
     String apellido;
     
-    public Persona(String nombre, String apellido){
+    public Persona(int idUser, String nombre, String apellido){
+        this.idUser=idUser;
         this.nombre=nombre;
         this.apellido=apellido;
     };
