@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -33,7 +32,7 @@ public class Main {
         
         System.out.println("Señor: "+ acc2.nombre + " su clave es: " + acc2.password );
         System.out.println("Señor: "+ acc2.nombre + " su cedula es: " + acc2.idUser );
-        //System.out.println("Señor: "+ acc2.nombre + " su saldo es:" + acc2.saldoCuenta );
+        System.out.println("Señor: "+ acc2.nombre + " su saldo es:" + acc2.saldoCuenta );
         acc2.consolutarSaldo();
         //FINAL CUENTAS BANCARIAS*/
         
